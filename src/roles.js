@@ -1,0 +1,28 @@
+export const roles = {
+  grandmother:{name:'祖母',team:'townsfolk',firstNight:true,otherNight:false,desc:'首夜得知一名善良玩家及其角色；若恶魔杀死他，你也死亡。'},
+  sailor:{name:'水手',team:'townsfolk',firstNight:true,otherNight:true,desc:'每夜选择一名存活玩家；你或他醉酒至下个黄昏。你不会死亡。'},
+  chambermaid:{name:'侍女',team:'townsfolk',firstNight:true,otherNight:true,desc:'每夜选择除你外两名存活玩家，得知其中有几人因自身能力被唤醒。'},
+  exorcist:{name:'驱魔人',team:'townsfolk',firstNight:false,otherNight:true,desc:'每夜选择一名玩家（不能与上夜相同）；若选中恶魔，恶魔当夜不会行动且会得知你。'},
+  innkeeper:{name:'旅店老板',team:'townsfolk',firstNight:false,otherNight:true,desc:'每夜选择两名玩家：他们当晚不会死亡，但其中一人醉酒至下个黄昏。'},
+  gambler:{name:'赌徒',team:'townsfolk',firstNight:false,otherNight:true,desc:'每夜选择一名玩家并猜其角色；猜错则你死亡。'},
+  gossip:{name:'造谣者',team:'townsfolk',firstNight:false,otherNight:true,desc:'白天可公开声明；若声明正确，当晚可能有一名玩家死亡。'},
+  courtier:{name:'侍臣',team:'townsfolk',firstNight:true,otherNight:true,once:true,desc:'整局一次，夜晚选择一个角色；若该角色在场，其醉酒三天三夜。'},
+  professor:{name:'教授',team:'townsfolk',firstNight:false,otherNight:true,once:true,desc:'整局一次，夜晚选择一名死亡玩家；若其为镇民，则复活。'},
+  minstrel:{name:'吟游诗人',team:'townsfolk',firstNight:false,otherNight:false,desc:'爪牙因处决死亡后，其他玩家醉酒直到明天黄昏。'},
+  teaLady:{name:'茶艺师',team:'townsfolk',firstNight:false,otherNight:false,desc:'若与你邻近的两名存活玩家均善良，他们不会死亡。'},
+  pacifist:{name:'和平主义者',team:'townsfolk',firstNight:false,otherNight:false,desc:'被处决的善良玩家可能不会死亡。'},
+  fool:{name:'弄臣',team:'townsfolk',firstNight:false,otherNight:false,desc:'你第一次将要死亡时不会死亡。'},
+  tinker:{name:'修补匠',team:'outsider',firstNight:false,otherNight:false,desc:'你随时可能死亡。'},
+  moonchild:{name:'月之子',team:'outsider',firstNight:false,otherNight:false,desc:'得知你死亡时公开选择一名存活玩家；若其善良，当晚他死亡。'},
+  goon:{name:'莽夫',team:'outsider',firstNight:true,otherNight:true,desc:'每夜首个以自身能力选择你的玩家醉酒至下个黄昏，你加入其阵营。'},
+  lunatic:{name:'疯子',team:'outsider',firstNight:true,otherNight:true,desc:'你以为自己是恶魔；真恶魔知道你和你的夜间选择。'},
+  godfather:{name:'教父',team:'minion',firstNight:true,otherNight:true,desc:'首夜得知外来者；若白天有外来者死亡，当晚可杀一人。'},
+  devilsAdvocate:{name:'魔鬼代言人',team:'minion',firstNight:true,otherNight:true,desc:'每夜选择一名存活玩家（不能与上夜相同）；若其明天被处决，不会死亡。'},
+  assassin:{name:'刺客',team:'minion',firstNight:false,otherNight:true,once:true,desc:'整局一次，夜晚选择一名玩家：他死亡，即使通常不能死亡。'},
+  mastermind:{name:'主谋',team:'minion',firstNight:false,otherNight:false,desc:'若恶魔因处决死亡导致游戏结束，再额外进行一天一夜；若次日有玩家被处决，其阵营落败。'},
+  zombuul:{name:'僵怖',team:'demon',firstNight:false,otherNight:true,desc:'若今天白天无人死亡，夜晚选择一名玩家死亡。你第一次死亡时不死，但会被视为死亡。'},
+  pukka:{name:'普卡',team:'demon',firstNight:true,otherNight:true,desc:'每夜选择一名玩家使其中毒；上个因你中毒的玩家死亡并恢复健康。'},
+  shabaloth:{name:'沙巴洛斯',team:'demon',firstNight:false,otherNight:true,desc:'每夜选择两名玩家死亡；你上夜选择过且当前死亡的玩家之一可能复活。'},
+  po:{name:'珀',team:'demon',firstNight:false,otherNight:true,desc:'每夜可选择一名玩家死亡；若上夜未选择任何玩家，当晚可选择三名玩家死亡。'}
+};
+export const teamLabel={townsfolk:'镇民',outsider:'外来者',minion:'爪牙',demon:'恶魔'};
